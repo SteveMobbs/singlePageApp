@@ -5,196 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Boostrap 5-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.bundle.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
-    <!--Google fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
-    
-    <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/b9db8ee33c.js" crossorigin="anonymous"></script>
-    
-    <!--Favicon-->
-    <link rel="icon" type="image/x-icon" href="../singlePageApp/assets/img/favicon.ico">
-    
     <!--myOwnCode-->
-    <title> Portfolio | SPA P5</title>
-    <link rel="stylesheet" href="../singlePageApp/css/style.css">
+    <title> Color Game | P5</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
 
 </head>
+
 <body>
-    <nav class="navbar">
-        <!-- LOGO -->
-        <div class="logo">My own page</div>
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
-          <!-- USING CHECKBOX HACK -->
-          <input type="checkbox" id="checkbox_toggle" />
-          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-          <!-- NAVIGATION MENUS -->
-          <div class="menu">
-            <li><a href="/">Portfolio</a></li>
-            <li><a href="/">Acerca de mí</a></li>
-            <li><a href="/">Contacto</a></li>
-          </div>
-        </ul>
-      </nav>
-<header>
-    <div>
-        <img src="../singlePageApp/assets/img/ms-icon-310x310.png" class="image" alt="Broken Link" width="20%" height="20%">
-    </div>
-    <div>
-        <h1>Steve Mobbs Original Product</h1>
-        <p>B Side Mapple Inc LLC for Happy Diego Fraud Foundation. Mystic Delirium - Ontologic Coach. Donate.</p>
-    </div>
-</header>
 
+  <h1>The Great <span id="colorDisplay"></span> Guessing Game</h1>
 
-<section><div class="container-fluid">
-    ...
-  </div></section>
-<section><div class="container-fluid">
-    ...
-  </div></section>
-<section><div class="container-fluid">
-    ...
-  </div></section>
+  <div><span id="message"></span></div>
 
-  <footer id="footer" class="bg-primary text-white d-flex-column text-center">
-  <hr class="mt-0">
-  <!--Social buttons-->
-  <div class="text-center">
-    <h4>You can find us at</h4>
-    <ul class="list-unstyled list-inline">
-      <li class="list-inline-item">
-        <a href="#!" class="sbtn btn-large mx-1" title="Facebook">
-          <i class="fab fa-facebook-square fa-2x"></i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a href="#!" class="sbtn btn-large mx-1" title="Linkedin">
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a href="#!" class="sbtn btn-large mx-1" title="Twitter">
-          <i class="fab fa-twitter-square fa-2x"></i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a href="#!" class="sbtn btn-large mx-1" title="Youtube">
-          <i class="fab fa-youtube-square fa-2x"></i>
-        </a>
-      </li>
-    </ul>
+  <div class="container">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
   </div>
-  <!--/.Social buttons-->
-  <hr class="mb-0">
-  <!--Footer Links-->
-  <div class="container text-left text-md-center">
-    <div class="row">
-      <!--First column-->
-      <div class="col-md-3 mx-auto shfooter">
-        <h5 class="my-2 font-weight-bold d-none d-md-block">Product</h5>
-        <div class="d-md-none title" data-target="#Product" data-toggle="collapse">
-          <div class="mt-3 font-weight-bold">Product
-            <div class="float-right navbar-toggler">
-              <i class="fas fa-angle-down"></i>
-              <i class="fas fa-angle-up"></i>
-            </div>
-          </div>
-        </div>
-        <ul class="list-unstyled collapse" id="Product">
-          <li><a href="#">Create Websites</a></li>
-          <li><a href="#">Secure Cloud Hosting</a></li>
-          <li><a href="#">Engage Your Audience</a></li>
-          <li><a href="#">Website Support</a></li>
-        </ul>
-      </div>
-      <!--/.First column-->
-      <hr class="clearfix w-100 d-md-none mb-0">
-      <!--Second column-->
-      <div class="col-md-3 mx-auto shfooter">
-        <h5 class="my-2 font-weight-bold d-none d-md-block">Company</h5>
-        <div class="d-md-none title" data-target="#Company" data-toggle="collapse">
-          <div class="mt-3 font-weight-bold">Company
-            <div class="float-right navbar-toggler">
-              <i class="fas fa-angle-down"></i>
-              <i class="fas fa-angle-up"></i>
-            </div>
-          </div>
-        </div>
-        <ul class="list-unstyled collapse" id="Company">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </div>
-      <!--/.Second column-->
-      <hr class="clearfix w-100 d-md-none mb-0">
-      <!--Third column-->
-      <div class="col-md-3 mx-auto shfooter">
-        <h5 class="my-2 font-weight-bold d-none d-md-block">Resources</h5>
-        <div class="d-md-none title" data-target="#Resources" data-toggle="collapse">
-          <div class="mt-3 font-weight-bold">Resources
-            <div class="float-right navbar-toggler">
-              <i class="fas fa-angle-down"></i>
-              <i class="fas fa-angle-up"></i>
-            </div>
-          </div>
-        </div>
-        <ul class="list-unstyled collapse" id="Resources">
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">eBooks</a></li>
-          <li><a href="#">Whitepapers</a></li>
-          <li><a href="#">Comparison Guide</a></li>
-          <li><a href="#">Website Grader</a></li>
-        </ul>
-      </div>
-      <!--/.Third column-->
-      <hr class="clearfix w-100 d-md-none mb-0">
-      <!--Fourth column-->
-      <div class="col-md-3 mx-auto shfooter">
-        <h5 class="my-2 font-weight-bold d-none d-md-block">Get Help</h5>
-        <div class="d-md-none title" data-target="#Get-Help" data-toggle="collapse">
-          <div class="mt-3 font-weight-bold">Get Help
-            <div class="float-right navbar-toggler">
-              <i class="fas fa-angle-down"></i>
-              <i class="fas fa-angle-up"></i>
-            </div>
-          </div>
-        </div>
-        <ul class="list-unstyled collapse" id="Get-Help">
-          <li><a href="#" target="_blank">Help Center</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Login</a></li>
-        </ul>
-      </div>
-      <!--/.Fourth column-->
-    </div>
-  </div>
-  <!--/.Footer Links-->
-  <hr class="mb-0">
-  <!--Copyright-->
-  <div class="py-3 text-center">
-    Copyright
-    <script>
-      document.write(new Date().getFullYear())
-    </script> <a href="#">W3SCHOOL WEB</a> | It is free for use
-  </div>
-  <!--/.Copyright-->
-</footer>
-<h5 class="resize"><i class="fas fa-angle-double-left"></i>Resize screen to see magic<i class="fas fa-angle-double-right"></i>
-    </footer>
 
-
-<!--Boostrap 5-->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
